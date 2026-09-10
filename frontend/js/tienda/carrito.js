@@ -84,9 +84,10 @@ function dibujarCarrito(carrito) {
     const subtotal = producto.precioVenta * producto.cantidad;
     total += subtotal;
     // La miniatura ayuda a reconocer el producto sin volver al catálogo.
-    const miniatura = producto.imagen
+    const ruta = rutaImagen(producto.imagen);
+    const miniatura = ruta
       ? '<img class="cart-item-thumb" src="' +
-        escaparHtml(rutaFrontend(producto.imagen)) +
+        escaparHtml(ruta) +
         '" alt="' +
         escaparHtml(producto.nombre) +
         '">'

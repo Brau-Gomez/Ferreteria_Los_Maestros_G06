@@ -1,15 +1,15 @@
 /* Hoja única de estilos para la tienda y el administrador, según la ERS. */
 /* Aqui dejamos los colores principales para no repetirlos en todo el archivo. */
 :root {
-  --ink: #153b35;
-  --deep: #0e302b;
-  --green: #236b5b;
-  --cream: #f7f4ec;
+  --ink: #183b63;
+  --deep: #0b2d4d;
+  --green: #145a9c;
+  --cream: #f4f6f8;
   --paper: #fffdf8;
   --yellow: #f7b733;
   --coral: #d86b4d;
-  --line: #d9ddd5;
-  --muted: #65716d;
+  --line: #d6dce3;
+  --muted: #5f6f7c;
   --error: #a33b2f;
 
   font-family: Arial, Helvetica, sans-serif;
@@ -97,7 +97,7 @@ a {
 /* El texto secundario se deja mas chico para crear jerarquia. */
 .brand small {
   margin-top: 3px;
-  color: #cbd9d2;
+  color: #cbd8e6;
   font-size: 11px;
 }
 
@@ -112,7 +112,7 @@ a {
   padding: 14px 5%;
 
   background: var(--deep);
-  border-top: 1px solid #416258;
+  border-top: 1px solid #3d6285;
 }
 
 /* app.js agrega is-open cuando apretamos el boton del menu movil. */
@@ -137,7 +137,7 @@ a {
 .menu-button {
   padding: 10px 12px;
 
-  border: 1px solid #6d8b81;
+  border: 1px solid #6e8eae;
   border-radius: 8px;
 
   background: transparent;
@@ -154,7 +154,7 @@ a {
 
   padding: 72px 5% 68px;
 
-  background: linear-gradient(115deg, var(--deep), #205d50);
+  background: linear-gradient(115deg, var(--deep), #174f83);
   color: #fff;
 }
 
@@ -170,6 +170,7 @@ a {
 /* Dentro del bloque oscuro usamos amarillo para tener mejor contraste. */
 .hero-view .eyebrow {
   color: var(--yellow);
+  
 }
 
 /* Todos los titulos ocupan una altura parecida y un margen consistente. */
@@ -189,7 +190,7 @@ h3 {
 /* Limitamos el ancho del parrafo para que sea mas comodo leerlo. */
 .hero-copy > p:not(.eyebrow) {
   max-width: 680px;
-  color: #d8e4de;
+  color: #d8e3ef;
   font-size: 18px;
   line-height: 1.55;
 }
@@ -224,7 +225,7 @@ h3 {
 
 /* Este segundo boton se usa sobre fondos oscuros. */
 .button-outline {
-  border: 1px solid #a4c0b5;
+  border: 1px solid #a7bdd2;
   background: transparent;
   color: #fff;
 }
@@ -251,7 +252,7 @@ button:disabled {
   max-width: 350px;
   padding: 25px;
 
-  border: 1px solid #688b7e;
+  border: 1px solid #688caf;
   border-radius: 16px;
 
   background: #ffffff16;
@@ -271,7 +272,7 @@ button:disabled {
 /* El texto que acompaña al total usa un tono mas suave. */
 .hero-summary > span {
   display: block;
-  color: #d6e2dc;
+  color: #d6e2ee;
   line-height: 1.4;
 }
 
@@ -283,7 +284,7 @@ button:disabled {
 
   margin-top: 25px;
   padding-top: 16px;
-  border-top: 1px solid #628276;
+  border-top: 1px solid #627f9d;
 }
 
 /* Cada numero y su etiqueta ocupan su propia linea. */
@@ -300,7 +301,7 @@ button:disabled {
 /* Las etiquetas se ven mas suaves que los numeros. */
 .summary-grid small {
   margin-top: 4px;
-  color: #c8d8d0;
+  color: #c8d7e7;
 }
 
 /* Secciones y tarjetas generales                                             */
@@ -659,13 +660,13 @@ form.auth-card {
   font-size: 13px;
 }
 
-/* Los mensajes correctos aparecen dentro de una caja verde clara. */
+/* Los mensajes correctos aparecen dentro de una caja azul clara. */
 .form-message {
   padding: 10px;
 
   border-radius: 7px;
-  background: #e7f4e9;
-  color: #1b6546;
+  background: #e3effb;
+  color: #145a9c;
 }
 
 /* Al existir un error cambiamos tambien el fondo del mensaje. */
@@ -863,7 +864,7 @@ form.auth-card {
 .admin-nav a:hover,
 .admin-nav a[aria-current="page"] {
   border-left-color: var(--yellow);
-  background: #19483f;
+  background: #145a9c;
   color: #fff;
 }
 
@@ -2211,4 +2212,8 @@ body:not(.admin-body) > main {
   background: var(--paper);
   border: 1px solid var(--line);
   border-radius: 12px;
+}
+
+#contact-form > button[type="submit"] {
+  margin-top: 12px;
 }

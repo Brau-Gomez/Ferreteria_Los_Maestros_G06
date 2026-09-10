@@ -101,7 +101,9 @@ function imagenProductoHtml(producto) {
 
 // Si una imagen no existe, la tarjeta sigue siendo legible.
 function activarRespaldoImagenes() {
-  const imagenes = document.querySelectorAll(".product-image");
+  const imagenes = document.querySelectorAll(
+    ".product-image, .cart-panel-thumb, .cart-item-thumb",
+  );
   for (let i = 0; i < imagenes.length; i++) {
     imagenes[i].addEventListener("error", function (evento) {
       const texto = document.createElement("p");

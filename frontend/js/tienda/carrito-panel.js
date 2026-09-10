@@ -43,9 +43,10 @@ function filaPanelCarrito(producto) {
   const subtotal = producto.precioVenta * producto.cantidad;
   const codigo = escaparHtml(producto.codigo);
   const topeAlcanzado = producto.cantidad >= producto.stock ? " disabled" : "";
-  const imagen = producto.imagen
+  const ruta = rutaImagen(producto.imagen);
+  const imagen = ruta
     ? '<img class="cart-panel-thumb" src="' +
-      escaparHtml(rutaFrontend(producto.imagen)) +
+      escaparHtml(ruta) +
       '" alt="' +
       escaparHtml(producto.nombre) +
       '">'
